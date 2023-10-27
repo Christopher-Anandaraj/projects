@@ -1,30 +1,3 @@
-"""
-while True:
-    purpose = input("Do you want to encode or decode? ")
-
-    if purpose == "encode" or purpose == "e":
-        enc_text = input("Enter text to encode: ")
-        print(enc_text)  
-        while True:
-            try:
-                scale = int(input("Enter your scale of encryption: "))
-                break
-            except ValueError:
-                print("Input a number.")
-                continue
-        
-
-
-        
-    elif purpose == "decode" or purpose == "d":
-        dec_text = input("Enter text to decode: ")
-        break
-    else:
-        print("Invalid input. Please enter 'encode' or 'decode'.")
-    
-    break
-"""
-
 import pyperclip
 
 while True:
