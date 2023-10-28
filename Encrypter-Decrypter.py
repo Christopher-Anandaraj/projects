@@ -1,9 +1,9 @@
 import pyperclip
 
 while True:
-    purpose = input("Do you want to encode or decode? ")
+    purpose = input("Do you want to encrypt or decrypt? ")
 
-    if purpose == "encode" or purpose == "e":
+    if purpose == "encrypted" or purpose == "e":
         enc_text = input("Enter text to encode: ")
 
         while True:
@@ -31,7 +31,7 @@ while True:
         pyperclip.copy(encrypted_text)
         print("Encrypted text copied to clipboard.\n")
 
-    elif purpose == "decode" or purpose == "d":
+    elif purpose == "decrypt" or purpose == "d":
         dec_text = input("Enter text to decode: ")
 
         while True:
@@ -58,4 +58,4 @@ while True:
     elif purpose == "kill":
         break
     else:
-        print("Invalid input. Please enter 'encode' or 'decode'.\n")
+        print("Invalid input. Please enter 'encrypt' or 'decrypt'.\n")
