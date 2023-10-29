@@ -4,7 +4,7 @@ while True:
     purpose = input("Do you want to encrypt or decrypt? ")
 
     if purpose == "encrypted" or purpose == "e":
-        enc_text = input("Enter text to encode: ")
+        enc_text = input("Enter text to encrypt: ")
 
         while True:
             try:
@@ -32,7 +32,7 @@ while True:
         print("Encrypted text copied to clipboard.\n")
 
     elif purpose == "decrypt" or purpose == "d":
-        dec_text = input("Enter text to decode: ")
+        dec_text = input("Enter text to decrypt: ")
 
         while True:
             try:
@@ -55,6 +55,10 @@ while True:
 
         print("Decrypted text:", decrypted_text, "\n")
 
+    elif purpose == "kill":
+        break
+    else:
+        print("Invalid input. Please enter 'encrypt' or 'decrypt'.\n")
     elif purpose == "kill":
         break
     else:
